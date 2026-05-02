@@ -1,0 +1,110 @@
+Show Jump Menu , shortcutCtrlJSkip to main content
+HQ
+Home
+Lineup
+Pings
+Hey!Notification inbox
+Activity
+Me
+Find
+Me
+quick nav[UG internship] Bridget Guo › Message Board
+File…
+30 Apr 2026 Meeting
+Hanno Southam
+Hanno Southam
+Apr 30
+Notified 2 people
+Rebooting project to get manuscripts written
+Greg ParadisGreg meeting notes from today! If you want a follow up, shoot Bridget GuoBridget or me a message. 
+
+Paper 1
+Title: Edge spread of hemlock dwarf mistletoe and implications for the group retention silvicultural system
+Tasks
+Upload data to UBC data repository and get doi
+Publish git repo and get doi
+Write: methods, results, intro and discussion
+Receive feedback: Richard, Greg, Ignacio, David, Hélène?
+Submit
+Timeline
+May 17, methods and results written, sent for feedback; data in repository; git repo published
+May 24, intro and discussion written, sent for feedback
+Jun 8, submitted to journal
+Paper 2
+Title: Mid-rotation hemlock dwarf mistletoe infection 
+Tasks
+Determine what (if any) changes are needed to predictive DMR model from HS thesis; email Bianca to ask
+Define research question/objective
+What is the expected range of HDM infection in mid-rotation stands managed with the group retention silvicultural system?
+Timeline
+May 17, outstanding statistical methodology questions answered with BE help; check in again at this point to define new timeline
+New boost
+Add a comment here…
+Subscribers
+3 people will be notified when someone comments on this message.
+
+Greg ParadisBridget GuoHanno Southam
+Add/remove people…
+You’re subscribed
+You’ll get a notification when someone comments on this message.
+
+Unsubscribe me
+
+Show Jump Menu , shortcutCtrlJSkip to main content
+HQ
+Home
+Lineup
+Pings
+Hey!Notification inbox
+Activity
+Me
+Find
+Me
+quick nav[UG internship] Bridget Guo › Message Board
+File…
+Outstanding stats questions
+Hanno Southam
+Hanno Southam
+May 1
+Notified 2 people
+Greg ParadisGreg and Bridget GuoBridget
+
+Using this space to summarize the outstanding statistics questions we need to answer. Greg, this is what we were hoping you'd digest and then bring to Bianca. Bridget, feel free to comment/edit.
+
+Questions
+Do we need to alter (adjust or refit from scratch) the inferential model relating DMR to tree level variables (seed load, DBH and distance from nearest infected source tree) to use it in a predictive context in the stand-level model?
+If yes, what would the model selection process look like and what model metrics would we look at?
+Context
+In the stand-level model we have right now, this DMR ~ tree level variable model is the component that assigns DMR to trees in the regenerating component. It simulates the "spread" of HDM from the mature forest around the edge of the block and in the retention patches into the regen. When I fit this model for my thesis I used an inferential model selection logic. Here's a couple para from my thesis that describe the model selection (pg. 29-30):
+
+"The pattern of HDM infection in the regenerating component was statistically described by
+modelling the DMR of live hemlock trees as a function of four tree-level variables: horizontal distance from the edge, seed load, DBH and crown class. The objective of this modelling was inferential—to describe the effect of the predictor variables (particularly distance from the edge) on the probability of the each DMR class. The dataset used for modelling consisted of 1093 live hemlock trees in the 0.0–50.0 m interval, 50% of which were simulated, healthy (DMR = 0), trees beyond the outer infection limit of a site (Table 10). Dead hemlock trees were excluded because mortality at the age class in the data was not caused by HDM infection and live trees represented future merchantable trees, which was the tree group that directly related to the study’s research objective. DMR was collapsed to three classes, 0 (healthy), IBLC–2 (light infection) and 3–5 (moderate–severe infection), to deal with model convergence issues associated with data scarcity; these groups corresponded to the DMR threshold (DMR ≥3) where growth impacts occur (Thomson et al. 1985; Muir and Hennon 2007). Similarly, continuous predictors were scaled (by subtracting the mean and dividing by the standard deviation) in some models to ensure convergence.
+
+Cumulative logit random intercept models (Agresti 2010) were used for the modelling. These
+models fit the cumulative probabilities of each of the three DMR classes simultaneously, respecting their ordinal nature. Collinearity between predictors was assessed in exploratory data analysis and by checking for inflated standard errors in models with potentially colinear variables; standard errors that are much larger than the coefficient estimate for a variable are inflated (Hosmer, Lemeshow, and Sturdivant 2013). To build models an intentional forward-selection approach was used, with the Akaike Information Criterion (AIC) as a metric for comparing models and likelihood ratio tests to assess the significance of terms (Agresti 2010). AIC was used because it is well suited to model selection in ecological systems with complex data generating processes, where the true model is not likely to be one of the candidate models (Aho, Derryberry, and Peterson 2014). Successively, the following models were fit:
+1. Single-variable
+2. Two-variable
+3. Two-variable with first-order interactions
+4. Three-variable
+5. Three-variable with first-order interactions
+6. Three-variable with first-order interactions and a random site effect
+These combinations explained all variable combinations interpreted to have ecologically plausible rationales, which aligned with the inferential objective of the modelling."
+
+So, I didn't build the model with a predictive modelling objective and now we're wondering if we can use it in a predictive context—thats the general question. At the very least, I expect we will have to include some assessment of the predictive accuracy of the model (e.g., with confusion matrices, the kappa statistic). I played around with these metrics when I was doing the analysis for my thesis, so I have some old code and it wouldn't be tough to pull together. But, I'm wondering if we need to redo the model selection process from the start, using predictive accuracy as the selection metric (vs. AIC and variable significance, like I did).
+
+Few other notes
+There is actually another ordinal submodel embedded in the stand-level model that this question applies to as well. That one assigns DMR to trees in the pre-harvest stand based on their proximity to DMR = 6 trees. Its based on different data (Shaw et al., 2005), but whichever path we decide to take, we should we should follow it for both models. 
+Bianca was my external examiner, so she had read my thesis and has some background on the project. 
+There is a draft of the methods that Bridget wrote up last year in the Manuscript tab of Documents on Basecamp if you need a refresher Greg! 
+Let me know what you think! Hanno
+New boost
+Add a comment here…
+Subscribers
+3 people will be notified when someone comments on this message.
+
+Greg ParadisBridget GuoHanno Southam
+Add/remove people…
+You’re subscribed
+You’ll get a notification when someone comments on this message.
+
+Unsubscribe me
