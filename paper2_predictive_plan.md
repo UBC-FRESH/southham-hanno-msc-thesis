@@ -1,5 +1,35 @@
 # Paper 2 Plan: Mid-Rotation HDM Predictive Modeling
 
+## Bianca Review Brief (1-page)
+**Purpose**
+- Request statistical review of our inferential-to-predictive transition plan for Paper 2 before we lock model governance.
+
+**Project objective**
+- Produce statistically defensible stand-level mid-rotation HDM risk ranges (incidence, `DMR>=3`, mean DMR) using existing data only.
+
+**Hard constraints**
+- No additional fieldwork.
+- No new samples.
+- Both ordinal submodels must be handled under one consistent predictive-governance workflow.
+
+**Proposed validation-first decision rule**
+- Run LOSO-CV on current model forms first.
+- Compare against two baselines (prevalence-only, distance/proximity-only).
+- Accept current model only if all pass:
+  - Better median LOSO probabilistic performance than best baseline.
+  - Wins in at least 60% of folds vs best baseline.
+  - No major calibration failure after optional recalibration.
+- If any fail criterion is triggered, run constrained ordinal refit workflow.
+
+**What we need from Bianca (explicit decisions)**
+1. Is this baseline-beating acceptance gate methodologically appropriate for this context?
+2. Which ordinal probabilistic metric should be primary for gate decisions and manuscript reporting?
+3. Is our calibration approach at the `DMR>=3` management threshold adequate, or should we change it?
+4. Is the constrained ordinal candidate family sufficient if refit is triggered, or are we missing essential alternatives?
+
+**Decision deadline**
+- Target to resolve these items by **May 11, 2026** so refit (if needed) can proceed without schedule slip.
+
 ## Hard Constraints
 - No additional fieldwork.
 - No new samples.
